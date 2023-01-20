@@ -14,11 +14,11 @@ plot(f)
 
 print(solve(f,x))
 
-pprint(solve(f > 0,x))
-pprint(solve(f < 0,x))
+pprint(solve(f > 0, x, domain=S.Reals), use_unicode=True)
+pprint(solve(f < 0, x, domain=S.Reals), use_unicode=True)
 
 diff_f = diff(f,x)
 print(diff_f)
 print(solve(diff_f))
-pprint(solveset(diff_f > 0, x))
-print(solve(diff_f < 0, x))
+pprint(solveset(diff_f > 0, x, domain=S.Reals), use_unicode=True)
+pprint(solveset(diff_f < 0, x, domain=S.Reals), use_unicode=True)
